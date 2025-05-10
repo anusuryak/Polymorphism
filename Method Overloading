@@ -1,1 +1,26 @@
+package Polymorphism;
+
+class Student {
+	static void dept() {
+		System.out.println("I am Anu Surya from IT dept");
+	}
+
+	static void dept(String stud) {
+		System.out.println("There are 66 Students in a dept:" + stud);
+	}
+
+	static void dept(String stud, String course) {
+		System.out.println("There are 66 Students in IT dept:" + stud + "," + course);
+	}
+}
+
+public class Methodloading {
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		s1.dept();
+		s1.dept("ANU");
+		s1.dept("Surya", "java");
+
+	}
+}
 
